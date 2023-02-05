@@ -35,24 +35,26 @@ export default function Home() {
     <div>
       <Head>
         <title>OpenAI Quickstart</title>
-        <link rel="icon" href="/dog.png" />
+        <link rel="icon" href="/assistant.png" />
       </Head>
 
       <main className={styles.main}>
-        <img src="/dog.png" className={styles.icon} />
-        <h3>Name my pet</h3>
+        <img src="/assistant.png"/>
+        {/* className={styles.icon} */}
+        <h3>Careers Chatbot</h3>
         <form onSubmit={onSubmit}>
           <input
             type="text"
             name="animal"
-            placeholder="Enter an animal"
+            placeholder="Type your question here..."
             value={animalInput}
             onChange={(e) => setAnimalInput(e.target.value)}
           />
-          <input type="submit" value="Generate names" />
+          <input type="submit" value="Get answers!" />
         </form>
         <div className={styles.result}>{result}</div>
       </main>
+      <div> <a href="https://www.flaticon.com/free-icons/assistant" title="assistant icons">Assistant icons created by Flat Icons - Flaticon</a></div>
     </div>
   );
 }
